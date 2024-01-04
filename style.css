@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #8bbac9;
+}
+
+.top-bar {
+  width: 100vw;
+  background-color: #222228;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  margin-left: 0.3em;
+  padding: 0.2em;
+}
+
+.todo-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#todo-app {
+  width: 50vw;
+  margin-bottom: 3em; 
+  margin-top: 8em;
+  background-color: #222228;
+  border-radius: 22px;
+  padding: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+  #todo-app {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #todo-app {
+    width: 100vw;
+  }
+
+  body {
+    background-color: #222228;
+  }
+}
+
+#todo-form {
+  margin-top: 2.4em;
+}
+
+#todo-input {
+  margin-bottom: 1em;
+  background-color: #38383d;
+  border: none;
+  border-radius: 22px;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+#todo-input::placeholder {
+  color: #767679;
+}
+
+#todo-input:focus {
+  outline: none;
+}
+
+#todo-submit {
+  display: none;
+  color: #000000;
+  background-color: #8bbac9;
+  font-weight: bold;
+  border: none;
+  border-radius: 22px;
+  margin-left: 0.6em;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  cursor: pointer;
+}
+
+.todo-card {
+  margin: 1em;
+  margin-top: 2em;
+  padding: 2em;
+  margin-left: 2.8em;
+  margin-right: 2.8em;
+  background-color: #38383d;
+  border-radius: 22px;
+  position: relative;
+}
+
+.todo-description {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+}
+
+.check-button {
+  color: #000000;
+  font-size: 1.6em;
+  background-color: #079452;
+  border: none;
+  border-radius: 22px;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3.9em;
+}
+
+.delete-button {
+  color: #000000;
+  font-size: 1.6em;
+  background-color: #ff7057;
+  border: none;
+  border-radius: 22px;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.8em;
+}
